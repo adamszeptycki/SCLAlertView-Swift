@@ -199,7 +199,7 @@ public class SCLAlertView: UIViewController {
     var dismissBlock : DismissBlock?
     private var inputs = [UITextField]()
     private var input = [UITextView]()
-    internal var buttons = [SCLButton]()
+    public internal(set) var buttons = [SCLButton]()
     private var selfReference: SCLAlertView?
     
     public init(appearance: SCLAppearance) {
